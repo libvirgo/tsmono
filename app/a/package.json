@@ -1,0 +1,17 @@
+{
+    "name": "@mono/a",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "clean": "rm -rf dist && rm -rf node_modules",
+        "build": "rollup -c",
+        "dev": "pnpm build && node dist/index.js"
+    },
+    "dependencies": {
+        "@mono/c": "workspace:*"
+    },
+    "devDependencies": {}
+}
